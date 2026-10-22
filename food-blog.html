@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food & Drink</title>
+    <style>
+       @import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=DM+Mono:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+       @import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=DM+Mono:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap'); 
+       @import url('https://fonts.googleapis.com/css2?family=DM+Mono:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+       
+       *{
+        padding: 0;
+        margin: 0;
+       }
+    
+       header{
+        display: flex;
+        justify-content: space-between;
+        padding: 15px 55px;
+       }
+       .logo {
+        width: 30px;
+       }
+       .blog-name{
+        font-family: Caveat;
+        font-weight: 600;
+        font-size: 35px;
+        
+        
+       }
+       .nav-links {
+        display: flex;
+        justify-content: space-evenly;
+        list-style: none;
+        gap: 75px;
+        margin-top: 10px;
+        padding: 0;
+       
+       }
+       .nav-links a{
+        text-decoration: none;
+        font-family: Inter ;
+        font-weight: 400;
+        font-size: 15px;
+        color:#686868 ;
+        vertical-align: baseline;
+       }
+       .nav-links a:hover{
+        color: black;
+        border-bottom: solid 3px #D99A19;
+        padding-bottom: 10px;
+       }
+       .search-img{
+        margin-top: 7px;
+       }
+       header button {
+        vertical-align: top;
+        background-color: #D99A19;
+        padding: 10px 20px;
+        color: white;
+        border-radius: 20px;
+        border: none;
+        font-family: inter;
+        font-weight: 400;
+        font-size: 15px;
+        margin-left: 20px;
+        cursor: pointer;
+        transition: 0.1s;
+       }
+       header button:hover {
+        color: #D99A19;
+        background-color: white;
+        border: #D99A19 solid 2px;
+       }
+       
+       
+       .main-text{
+       padding: 80px 0px 55px 55px;
+       }
+        .main-text h3 {
+            color: #D99A19;
+            margin-bottom: 15px;
+            font-family: inter;
+            font-weight: 500;
+
+        }
+        .main-text h1{
+            font-family: playfair display;
+            font-weight: 700;
+            font-size: 65px;
+            font-style: semibold;
+            
+            
+        }
+        .main-text p {
+            font-family: inter;
+            font-weight: 400;
+            font-size: 17px;
+            color: #686868;
+            margin-top: 25px;
+        }
+        .blog-img{
+            width: 93%;
+            height: 580px;
+            margin: 0 55px;
+            overflow: hidden;
+            border-radius: 10px;
+        }
+         main img {
+            width: 100%;
+            display: block;
+            height:100% ;
+            object-fit: cover;
+            object-position: center;
+        }
+        
+        .blog-content {
+            
+            margin: 30px 55px;
+            padding: 0 24px;
+            color: #3d3d38;
+            font-family: 'Inter', sans-serif;
+            font-size: 16px;
+            line-height: 1.9;
+        }
+
+        .blog-content > p {
+            margin-bottom: 24px;
+        }
+
+        .blog-content h2 {
+            margin-top: 30px;
+            margin-bottom: 8px;
+            color: #242720;
+            font-family: 'Playfair Display', serif;
+            font-size: 24px;
+            font-weight: 500;
+        }
+
+        .blog-content h3 {
+            margin-top: 16px;
+            color: #a87822;
+            font-size: 17px;
+        }
+
+        .blog-content ul {
+            padding-left: 24px;
+            margin-bottom: 24px;
+        }
+
+        .blog-content li {
+            margin-bottom: 6px;
+        }
+
+        .blog-conclusion {
+            margin-top: 32px;
+            padding: 20px;
+            background: #f4efdf;
+            border-left: 3px solid #c58b24;
+            font-style: italic;
+        }
+
+
+
+        .blog-content h2 {
+                font-size: 21px;
+        }
+        footer{
+            background-color: #17191c;
+            padding: 20px 55px;
+        }
+        .footerblog-name{
+            font-family: Caveat;
+            font-weight: 600;
+            font-size: 28px;
+            color: white;
+            margin: 20px 0px;
+        }
+        footer p {
+            font-family: inter;
+            font-weight: 400;
+            color: white;
+            font-size: 15px;
+            margin-top: 20px 0px;
+        }
+        footer span{
+            font-family: inter;
+            font-weight: 400;
+            color: white;
+            font-size: 15px;
+            margin-top: 20px 0px;
+        }
+
+       
+    </style>
+</head>
+<body>
+     <header>
+        <div>
+        <img src="blog images/golden leaf.png" alt="" class="logo">
+        <span class="blog-name">Mindful Pages</span>
+        </div>
+        <ul class="nav-links">
+            <li><a href="">Home</a></li>
+            <li><a href="">Articles</a></li>
+            <li><a href="">Categories</a></li>
+            <li><a href="">About</a></li>
+            <li><a href="">Contact</a></li>
+        </ul>
+        <div>
+        <img src="blog images/search.png" alt="" class="search-img">
+        <button >Subscribe</button>
+        </div>
+    </header>
+     <main>
+        <div class="main-text">
+            <h3>FOOD & DRINK</h3>
+            <h1>Easy & Healthy Meal Ideas</h1> <h1>for Busy Days</h1> 
+            <p>March 26, 2026 . 5 min read</p>
+           
+        </div>
+        <div class="blog-img">
+            <img src="blog images/food.avif" alt="">
+        </div>
+    </main>
+    
+
+
+<article class="blog-content">
+
+    <p>
+        Life gets busy, but that doesn't mean you have to
+        compromise on healthy eating. With a few simple recipes
+        and smart meal ideas, you can fuel your body, save time
+        and feel your best — even on the busiest days.
+    </p>
+
+    <h2>1. Overnight Oats</h2>
+    <p>
+        Prep it the night before and enjoy a nutritious,
+        filling breakfast in the morning. Top your oats with
+        your favourite fruits, nuts and a drizzle of honey.
+    </p>
+
+    <h3>Ingredients</h3>
+    <ul>
+        <li>Rolled oats</li>
+        <li>Milk or your favourite plant-based alternative</li>
+        <li>Greek yoghurt (optional)</li>
+        <li>Fresh fruit</li>
+        <li>Nuts or seeds</li>
+        <li>Honey (optional)</li>
+    </ul>
+
+    <h2>2. Avocado Toast</h2>
+    <p>
+        Simple, healthy and always a good idea. Mash ripe avocado
+        onto whole-grain toast and add eggs, seeds or chilli flakes
+        for extra flavour and protein.
+    </p>
+
+    <h3>Ingredients</h3>
+    <ul>
+        <li>Whole-grain bread</li>
+        <li>Ripe avocado</li>
+        <li>Egg (optional)</li>
+        <li>Salt and pepper</li>
+        <li>Chilli flakes (optional)</li>
+    </ul>
+
+    <h2>3. Chicken and Quinoa Bowl</h2>
+    <p>
+        Combine cooked chicken, quinoa and fresh vegetables for
+        a balanced, colourful meal. Add olive oil and lemon juice
+        for a simple dressing that brings everything together.
+    </p>
+
+    <h3>Ingredients</h3>
+    <ul>
+        <li>Chicken breast</li>
+        <li>Cooked quinoa</li>
+        <li>Mixed vegetables</li>
+        <li>Olive oil</li>
+        <li>Lemon juice</li>
+    </ul>
+
+    <p class="blog-conclusion">
+        Healthy food doesn't have to be complicated.
+        Keep it simple, fresh and made with intention.
+    </p>
+
+</article>
+<footer>
+        <div>
+            <div>
+                <h3 class="footerblog-name"><img src="blog images/golden leaf.png" alt="" class="logo" >Mindful Pages</h3>
+                <p>Thoughtful articles for a kinder, healthier and more intentional life.</p>
+            </div>
+            <div class="socials-icon">
+
+            </div>
+        </div>
+        <div>
+            <div> 
+             <span> 2026 Mindful Pages. All rights reserved.</span>
+            </div>
+            <div>
+                <span> Privacy Policy | Terms of Service</span>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
